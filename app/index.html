@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI, all 55 PS5 trophies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div>
+      <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; works offline</p>
+      <h1>Leonida Trophy Guide</h1>
+      <p class="subtitle">Every one of the 55 official trophies — a tracker, a roadmap to the
+      platinum, and a guide for each trophy in our own words. No network, no
+      account, no ads. Your progress stays in this browser.</p>
+    </div>
+    <div class="progress-card" aria-label="Progress">
+      <p class="big-count"><span id="earnedCount">0</span><span class="of"> / 55</span></p>
+      <p class="progress-label">trophies earned</p>
+      <div class="bar" role="progressbar" aria-label="Trophies earned"><div id="progressBar" class="bar-fill"></div></div>
+      <p id="gradeStats" class="grade-stats"></p>
+    </div>
+  </div>
+  <div class="sunset-bar" aria-hidden="true"></div>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <button type="button" data-view="checklist" class="tab active">Checklist</button>
+  <button type="button" data-view="roadmap" class="tab">Roadmap</button>
+  <button type="button" data-view="missables" class="tab">Missables <span class="pill">1</span></button>
+  <button type="button" data-view="sources" class="tab">Sources</button>
+</nav>
+
+<main>
+  <section id="view-checklist" class="view active">
+    <div class="toolbar">
+      <label class="field search-field">Search
+        <input id="search" type="search" placeholder="Name, description or guide…" autocomplete="off">
+      </label>
+      <label class="field">Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="field">Kind
+        <select id="kindFilter">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="side">Side quests &amp; activities</option>
+          <option value="collection">Collections</option>
+          <option value="stunt">Stunts &amp; races</option>
+          <option value="misc">Everything else</option>
+        </select>
+      </label>
+      <label class="field">Show
+        <select id="earnedFilter">
+          <option value="all">All trophies</option>
+          <option value="remaining">Not yet earned</option>
+          <option value="earned">Earned</option>
+        </select>
+      </label>
+      <button id="spoilerToggle" type="button" class="btn" aria-pressed="true">Spoilers: hidden</button>
+      <button id="exportBtn" type="button" class="btn">Export progress</button>
+      <label class="btn import-btn">Import progress
+        <input id="importFile" type="file" accept="application/json">
+      </label>
+      <button id="resetBtn" type="button" class="btn danger">Reset</button>
+    </div>
+
+    <p id="resultCount" class="result-count"></p>
+
+    <aside id="nextUp" class="next-up" aria-label="Next up"></aside>
+
+    <div class="checklist-grid">
+      <ul id="list" class="trophy-list"></ul>
+      <aside id="detail" class="detail" aria-label="Trophy guide"></aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view">
+    <p class="view-intro">The road to the platinum, in PowerPyx&rsquo;s shape: about 200 hours at
+    4/10 difficulty, one playthrough, no mission replay, free roam after the
+    story. The phases below are built from the official trophy descriptions;
+    the steps are our own words.</p>
+    <div id="roadmap"></div>
+  </section>
+
+  <section id="view-missables" class="view">
+    <p class="view-intro">Only one trophy is even possibly missable. Everything else — story
+    included — can be finished after the credits, and nothing on the 100%
+    checklist can be missed.</p>
+    <div id="missables"></div>
+  </section>
+
+  <section id="view-sources" class="view">
+    <p class="view-intro">Where every fact in this guide comes from. The guides themselves are
+    our own words, written from the official descriptions and the sources
+    below — never copied from another guide. Anything we could not confirm
+    in two public guides is marked <em>unconfirmed</em> in its guide.</p>
+    <ul class="source-list">
+      <li><strong>Exophase — GTA VI trophies (PS5).</strong>
+        <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">exophase.com/game/grand-theft-auto-vi-psn/trophies</a>
+        The official list: every trophy&rsquo;s name, description, grade and hidden flag, checked 2026-11-19.</li>
+      <li><strong>PSNProfiles — GTA VI trophies.</strong>
+        <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">psnprofiles.com/trophies/43531-grand-theft-auto-vi</a>
+        PSN&rsquo;s progress targets (the 0/N counters, for example 0/250 stunts) and live rarity, checked 2026-11-19.</li>
+      <li><strong>PowerPyx — GTA 6 Trophy Guide &amp; Roadmap.</strong>
+        <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap</a>
+        Difficulty 4/10, about 200 hours, the one potentially missable trophy, the roadmap shape, and the how-to details behind the guides.</li>
+      <li><strong>GTA Zone — GTA 6 Trophy List.</strong>
+        <a href="https://gta-zone.com/news/gta-6-trophies-achievements/">gta-zone.com/news/gta-6-trophies-achievements</a>
+        A round-up comparing PowerPyx and GTABase: the visible/hidden split (27 visible, 28 hidden), the chapter of each story trophy, and the counts behind the collectibles.</li>
+      <li><strong>GTABase — GTA 6 trophy list</strong> (cited through the GTA Zone round-up above).
+        The chapter each story trophy belongs to, and the Xbox Gamerscore values.</li>
+    </ul>
+    <p class="honesty">Honest limits: the game launched on 2026-11-19, the day this guide was
+    written. Five trophies&rsquo; exact triggers are not pinned down yet in any
+    public guide, and one hunting target is unconfirmed — their guides say so
+    plainly instead of guessing. We will update them as players crack them.
+    Rockstar has published no official trophy list; the names and descriptions
+    here are the ones Exophase and PSNProfiles agree on.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Trophy Guide — an unofficial, fan-made guide. Grand Theft Auto
+  and GTA are trademarks of Rockstar Games; this guide shows no Rockstar logo
+  and no official artwork. All 55 names, descriptions and grades are the
+  official list as published by Exophase and PSNProfiles on 2026-11-18;
+  every guide is written in our own words. Works fully offline: it loads
+  nothing over the network, and your progress never leaves this browser.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
